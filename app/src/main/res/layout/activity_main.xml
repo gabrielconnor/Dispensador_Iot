@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sistema Iot Mascotas"
+        android:textSize="24dp"
+        android:textStyle="bold"/>
+    <RadioGroup
+        android:id="@+id/rbRol"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <RadioButton
+            android:id="@+id/rbDispensador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono Dispensador (Mascota)"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/rbDueño"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Panel Dueño"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/etPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Codigo Pin (ej: 1234)"
+        android:inputType="number"
+        android:layout_marginTop="16dp"/>
+    <Button
+        android:id="@+id/btnConectar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Iniciar / conectar Bluetooth"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>

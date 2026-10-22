@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modo Dispensador (Mascota)"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tvNivelComida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nivel de Comida: 50%"
+        android:layout_marginTop="20dp"/>
+    <SeekBar
+        android:id="@+id/swPresencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100" 
+        android:progress="50"/>
+    <Switch
+        android:id="@+id/swPresencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mascota Presente"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tvEstadoCompuerta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compuerta: Cerrada"
+        android:textColor="#FF0000"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
